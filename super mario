@@ -1,0 +1,9 @@
+n = int(input("please define the number of layers for your pyramid: "))
+
+for i in range(0, n):
+    for j in range(0, i + n + 3):
+        if j == n or j == n + 1 or i + j < n -1 :
+            print(" ", end="")
+        else:
+            print("#", end="")
+    print()
